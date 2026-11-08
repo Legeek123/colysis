@@ -70,7 +70,7 @@ print:
     lodsb ; lodsb means "LOad String Byte", it loads the DS:SI octet into AL (Accumulator Low) 
     cmp al, 0 ; compare (cmp) al to 0
     je done ; if al = 0, we jump to the done label (je means "Jump if Equal)
-    mov ah, 0x0E ; else we set ah (accumulator high-byte) to 0x0E (14 in base 10)
+    mov ah, 0x0E ; else we set ah (accumulator high-byte) to 0x0E (14 in base 10). This selects BIOS video service 0Eh: Teletype Output.
     int 0x10 ; interrupt the software with a 0x10 code (16 in base 10) that will display a single character (the one in al)
     jmp print ; then we jump to the print label (it's a loop that will stop only if the comparison at line 3 is True)
 ```
