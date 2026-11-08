@@ -94,3 +94,5 @@ Finally, we define our message in the msg label, fill the remaining 510 bytes wi
 <br><br>
 
 So that's all, for the moment, next we'll tell our bootloader to boot on our OS.
+
+![image](https://raw.githubusercontent.com/Legeek123/colysis/refs/heads/main/assets/Screenshot_20261108_170250.png)
